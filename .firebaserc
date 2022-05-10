@@ -1,0 +1,5 @@
+{
+  "projects": {
+    "default": "litigantcare-auth-prod"
+  }
+}
