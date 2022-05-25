@@ -71,5 +71,15 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ### `firebase login`
 
+If you’re wondering, env-cmd library is a simple node program for executing commands using an environment from an env file.
+
+### `npm i -D env-cmd`
+
+Now, I will create aliases for both projects by running:
+
+### `firebase use --add`
+
 ### `firebase init hosting`
+
+### `firebase deploy --only hosting`
 
