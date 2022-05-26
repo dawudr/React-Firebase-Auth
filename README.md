@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Available Scripts
 
 In the project directory, you can run:
 
@@ -59,17 +59,26 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/ma
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-### Deployment
+# Deployment
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-### `npm run build` fails to minify
+### `npm ci && npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
-### Firebase Hosting
+## Firebase Hosting
+Learn more: https://firebase.google.com/docs/cli#install_the_firebase_cli
+https://medium.com/swlh/how-to-deploy-a-react-app-with-firebase-hosting-98063c5bf425
+
+### `npm install -g firebase-tools`
+Update to the latest CLI version
 
 ### `firebase login`
+Login with your credentials.
+
+### `firebase projects:list`
+The displayed list should be the same as the Firebase projects listed in the Firebase console.
 
 If you’re wondering, env-cmd library is a simple node program for executing commands using an environment from an env file.
 
@@ -78,8 +87,39 @@ If you’re wondering, env-cmd library is a simple node program for executing co
 Now, I will create aliases for both projects by running:
 
 ### `firebase use --add`
+Link to firebase project created in console.
 
 ### `firebase init hosting`
+Initialize your project
+
+```
+? What do you want to use as your public directory? build
+? Configure as a single-page app (rewrite all urls to /index.html)? Yes
+? Set up automatic builds and deploys with GitHub? No
+? File build/index.html already exists. Overwrite? No
+'
+```
+
 
 ### `firebase deploy --only hosting`
+Deploy to your site
+
+
+## Set up the GitHub Action to deploy to Firebase Hosting
+Learn more: (https://firebase.google.com/docs/hosting/github-integration
+https://medium.com/firebase-developers/the-comprehensive-guide-to-github-actions-and-firebase-hosting-818502d86c31
+
+The first thing we need to do is authorize with GitHub
+The Firebase CLI OAuth app asks to be authorized on your behalf so we can do two things: upload a secret to GitHub’s secret store and check to see if you own the repo you’re setting up a workflow with. That’s it.
+The CLI creates a Service Account on your behalf and uploads its secret keys to GitHub’s secret store.
+The CLI looks to write a file in the workflow folder called firebase-hosting-pull-request.yml. If you want to deploy to live on a merge to your main branch you’ll also have a file called firebase-hosting-merge.yml
+
+`firebase init hosting:github`
+
+dawudr/React-Firebase-Auth
+
+
+In GitHub, create a new branch and commit the workflow yaml files created by the CLI. Merge the branch.
+
+
 
