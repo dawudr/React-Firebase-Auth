@@ -68,8 +68,10 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
 ## Firebase Hosting
-Learn more: https://firebase.google.com/docs/cli#install_the_firebase_cli
-https://medium.com/swlh/how-to-deploy-a-react-app-with-firebase-hosting-98063c5bf425
+Learn more: 
+[https://firebase.google.com/docs/cli#install_the_firebase_cli](https://firebase.google.com/docs/cli#install_the_firebase_cli)
+
+[https://medium.com/swlh/how-to-deploy-a-react-app-with-firebase-hosting-98063c5bf425]([https://medium.com/swlh/how-to-deploy-a-react-app-with-firebase-hosting-98063c5bf425])
 
 ### `npm install -g firebase-tools`
 Update to the latest CLI version
@@ -106,8 +108,12 @@ Deploy to your site
 
 
 ## Set up the GitHub Action to deploy to Firebase Hosting
-Learn more: (https://firebase.google.com/docs/hosting/github-integration
-https://medium.com/firebase-developers/the-comprehensive-guide-to-github-actions-and-firebase-hosting-818502d86c31
+Learn more:
+
+[https://firebase.google.com/docs/hosting/github-integration](https://firebase.google.com/docs/hosting/github-integration)
+
+[https://medium.com/firebase-developers/the-comprehensive-guide-to-github-actions-and-firebase-hosting-818502d86c31](https://medium.com/firebase-developers/the-comprehensive-guide-to-github-actions-and-firebase-hosting-818502d86c31)
+
 
 The first thing we need to do is authorize with GitHub
 The Firebase CLI OAuth app asks to be authorized on your behalf so we can do two things: upload a secret to GitHub’s secret store and check to see if you own the repo you’re setting up a workflow with. That’s it.
