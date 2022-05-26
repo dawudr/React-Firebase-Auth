@@ -123,9 +123,8 @@ The CLI looks to write a file in the workflow folder called firebase-hosting-pul
 `firebase init hosting:github`
 
 dawudr/React-Firebase-Auth
-
-
 In GitHub, create a new branch and commit the workflow yaml files created by the CLI. Merge the branch.
 
 
-
+`firebase hosting:channel:deploy`
+Preview and share
