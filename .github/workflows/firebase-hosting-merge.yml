@@ -18,3 +18,4 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_LITIGANTCARE_AUTH_PROD }}'
           channelId: live
           projectId: litigantcare-auth-prod
+          args: deploy --only hosting
